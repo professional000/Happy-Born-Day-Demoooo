@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Georgia, serif;
+    color: white;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #160b20,
+        #541b43,
+        #210b22
+    );
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    padding: 35px 22px;
+    border: 1px solid #ffffff40;
+    border-radius: 25px;
+    background: #ffffff12;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 50px #0007;
+}
+
+.top {
+    color: #ffd98a;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: clamp(35px, 8vw, 55px);
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: clamp(40px, 10vw, 65px);
+    color: #ff91bd;
+    font-style: italic;
+}
+
+.age {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 18px;
+    border: 1px solid #ffd98a;
+    border-radius: 30px;
+    color: #ffd98a;
+}
+
+.cake {
+    font-size: 100px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.intro {
+    line-height: 2;
+    margin: 20px 0;
+    color: #ffe4ef;
+}
+
+button {
+    padding: 14px 25px;
+    margin: 8px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg,#ff7eaa,#ffd0df);
+    color: #40132b;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.music {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.hidden {
+    display: none;
+}
+
+#surprise {
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #ff91bd;
+    border-radius: 20px;
+    background: #ffffff12;
+    line-height: 2;
+}
+
+#surprise h3 {
+    color: #ffb2d0;
+    margin-bottom: 15px;
+}
+
+.emojis {
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 30px;
+    color: #e7b8d0;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    animation: floatUp 6s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
